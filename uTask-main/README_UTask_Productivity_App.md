@@ -5,8 +5,8 @@
 UTask est une application de productivité conçue pour aider les étudiants, professeurs et professionnels à gérer leurs tâches efficacement, éviter de perdre du temps et rester organisés. Le projet est containerisé à l'aide de Docker, ce qui simplifie le déploiement et l'accessibilité, tant localement que dans le cloud. L'objectif est de créer une application facile à accéder et à tester sans la complexité des procédures d'installation.
 
 ### **Collaborateurs :**
-- Anam Aya
 - Fatima Zahra Ait Lamine
+- Anam Aya
 
 ### **Encadrant :**
 - Professeur Khiat Azzedine
@@ -48,7 +48,7 @@ services:
       - utask_network
 
   backend:
-    image: ayaanam/utask-main-backend:latest
+    image: fatimazahraaitlamine/utask-main-backend:latest
     depends_on:
       - mongo
     ports:
@@ -57,7 +57,7 @@ services:
       - utask_network
 
   frontend:
-    image: ayaanam/utask-main-frontend:latest
+    image: fatimazahraaitlamine/utask-main-frontend:latest
     depends_on:
       - backend
     ports:
