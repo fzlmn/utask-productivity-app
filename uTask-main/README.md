@@ -108,7 +108,7 @@ CMD ["npm", "run", "start"]
 ### 1. Cloner le dépôt
 ```bash
 git clone https://github.com/fzlmn/utask-productivity-app.git
-cd utask-productivity-app
+cd utask-main
 ```
 
 ### 2. Construire les images Docker
