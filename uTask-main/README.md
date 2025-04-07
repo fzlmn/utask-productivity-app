@@ -149,8 +149,8 @@ docker push fatimazahraaitlamine/utask-main-backend:latest
 
 ## Lien vers DockerHub
 Les images Docker utilisées pour ce projet sont disponibles sur DockerHub :
-- [UTask Frontend Docker Image](https://hub.docker.com/r/fzlmn/utask-main-frontend)
-- [UTask Backend Docker Image](https://hub.docker.com/r/fzlmn/utask-main-backend)
+- [UTask Frontend Docker Image](https://hub.docker.com/r/fatimazahraaitlamine/utask-main-frontend)
+- [UTask Backend Docker Image](https://hub.docker.com/r/fatimazahraaitlamine/utask-main-backend)
 
 ## Choix Techniques & Difficultés
 - **Docker Compose** a été choisi pour gérer les containers facilement avec une seule commande (`docker-compose up`), simplifiant ainsi le processus de déploiement et de test, notamment pour les utilisateurs non techniques.
