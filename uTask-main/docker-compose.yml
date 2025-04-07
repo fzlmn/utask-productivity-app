@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - utask_network
+
+  backend:
+    image: fatimazahraaitlamine/utask-main-backend:latest
+    depends_on:
+      - mongo 
+    ports:
+      - "9000:9000"
+    networks:
+      - utask_network
+
+  frontend:
+    image: fatimazahraaitlamine/utask-main-frontend:latest
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    networks:
+      - utask_network
+
+networks:
+  utask_network:
